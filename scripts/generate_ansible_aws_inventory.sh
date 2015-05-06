@@ -27,4 +27,4 @@ done
 _AddLocal
 _AddAll
 cat ./yaml/*.yaml.tmp >>./yaml/hosts
-cp /dev/null *.yaml.tmp
+cp ./yaml/hosts /etc/ansible/hosts
