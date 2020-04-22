@@ -51,7 +51,7 @@ def main(argv):
       results=[]
       for region_name_id in RegionsList_ids:
             if args.verbose:
-               log.info("Processing region  ",region_name_id )
+               log.info("Processing region  "+region_name_id )
             ec2_instance = boto3.client('ec2',region_name=region_name_id,aws_access_key_id=AWS_ACCESS_KEY_ID,aws_secret_access_key=AWS_SECRET_ACCESS_KEY)
             response_instance = ec2_instance.describe_instances()
             for reservation in response_instance["Reservations"]:
