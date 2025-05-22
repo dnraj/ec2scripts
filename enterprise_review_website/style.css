@@ -1,0 +1,112 @@
+body {
+    font-family: sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+main {
+    padding: 20px;
+    max-width: 800px;
+    margin: 20px auto;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+section {
+    margin-bottom: 20px;
+    padding: 20px;
+    border-bottom: 1px solid #eee;
+}
+
+section:last-child {
+    border-bottom: none;
+}
+
+h2 {
+    color: #333;
+}
+
+.enterprise-item {
+    background: #fff;
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.enterprise-item h3 {
+    margin-top: 0;
+    color: #0056b3;
+}
+
+.reviews {
+    margin-top: 10px;
+    padding-left: 15px;
+    border-left: 3px solid #eee;
+}
+
+.review {
+    font-size: 0.9em;
+    margin-bottom: 5px;
+    background: #f9f9f9;
+    padding: 8px;
+    border-radius: 3px;
+}
+
+#review-form div {
+    margin-bottom: 10px;
+}
+
+#review-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+#review-form input[type="text"],
+#review-form input[type="number"],
+#review-form textarea {
+    width: calc(100% - 22px); /* Account for padding and border */
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+#review-form textarea {
+    resize: vertical;
+}
+
+#review-form button {
+    display: inline-block;
+    background: #0056b3;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#review-form button:hover {
+    background: #004494;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #333;
+    color: #fff;
+    margin-top: 30px;
+}

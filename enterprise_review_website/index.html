@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enterprise Review Hub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Enterprise Review Hub</h1>
+    </header>
+
+    <main>
+        <section id="enterprise-list">
+            <h2>Enterprises</h2>
+            <!-- Sample enterprise item -->
+            <article class="enterprise-item">
+                <h3>Enterprise Name 1</h3>
+                <p>Industry: Tech</p>
+                <div class="reviews">
+                    <h4>Reviews:</h4>
+                    <p class="review">Great company to work with! - 5 stars</p>
+                    <p class="review">Could improve customer service. - 3 stars</p>
+                </div>
+            </article>
+            <article class="enterprise-item">
+                <h3>Enterprise Name 2</h3>
+                <p>Industry: Finance</p>
+                <div class="reviews">
+                    <h4>Reviews:</h4>
+                    <p class="review">Innovative solutions. - 4 stars</p>
+                </div>
+            </article>
+            <!-- Enterprise items will be listed here -->
+        </section>
+
+        <section id="review-form-section">
+            <h2>Submit a Review</h2>
+            <form id="review-form">
+                <div>
+                    <label for="enterprise-name">Enterprise Name:</label>
+                    <input type="text" id="enterprise-name" name="enterprise-name" required>
+                </div>
+                <div>
+                    <label for="industry">Industry:</label>
+                    <input type="text" id="industry" name="industry">
+                </div>
+                <div>
+                    <label for="rating">Rating (1-5):</label>
+                    <input type="number" id="rating" name="rating" min="1" max="5" required>
+                </div>
+                <div>
+                    <label for="review-text">Review:</label>
+                    <textarea id="review-text" name="review-text" rows="4" required></textarea>
+                </div>
+                <button type="submit">Submit Review</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Enterprise Review Hub</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
